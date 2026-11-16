@@ -8,7 +8,14 @@ slips), sorts and adds them up, and gives Claude short summaries to work with. C
 that matter, keeps a record of every decision, and prepares returns, schedules and letters **for you to check and
 submit yourself** on SARS eFiling or CIPC. Nothing is submitted or paid by Claude.
 
-**Start here: [docs/SETUP.md](docs/SETUP.md).** To have Claude guide the setup, use [docs/HANDOFF-PROMPT.md](docs/HANDOFF-PROMPT.md).
+## Quick start
+1. Install [Claude Desktop](https://claude.com/download) and sign in (the Free plan is enough).
+2. Open [docs/HANDOFF-PROMPT.md](docs/HANDOFF-PROMPT.md), copy the prompt, change the two words in brackets, and
+   paste it into a new chat. Claude walks you through the installation one step at a time.
+3. When the **cheetah** tools appear after restarting Claude Desktop, Claude starts **cheetah-init**: a short
+   interview about your tax, what to file first, and setting up your folders and Claude Projects.
+
+Prefer to do it yourself? Follow [docs/SETUP.md](docs/SETUP.md).
 
 ## What it covers
 - Personal income tax (ITR12): certificates, auto-assessment checks, refund estimates (tax years 2023-2026)

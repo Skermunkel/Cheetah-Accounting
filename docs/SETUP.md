@@ -6,6 +6,10 @@ Your tax documents stay on your computer; Cheetah never uploads them anywhere.
 ## 1. Install Claude Desktop
 Download it from https://claude.com/download, install it and sign in.
 
+**Easiest way:** once Claude Desktop is open, paste the prompt from
+[HANDOFF-PROMPT.md](HANDOFF-PROMPT.md) into a new chat. Claude then guides you through steps 2 to 5 below, one
+at a time, and starts cheetah-init for you at the end.
+
 ## 2. Install Cheetah
 **Windows**: press the Start button, type `PowerShell`, open it, paste this line and press Enter:
 
