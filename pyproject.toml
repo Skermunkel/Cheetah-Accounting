@@ -1,0 +1,38 @@
+[project]
+name = "cheetah-accounting"
+version = "0.1.0"
+description = "Local South African tax and bookkeeping helper for Claude Desktop (MCP server + skills)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "mcp>=2.0,<3",
+    "pdfplumber>=0.11",   # exact text of digital PDFs (bank statements) without any AI model
+    "docling>=2.40",      # scans, photos, Word/Excel files and tables; runs fully offline after the first model download
+    "torch",              # listed directly (Docling needs it) so the CPU-only source below applies on Linux
+    "torchvision",
+]
+
+[project.scripts]
+cheetah-mcp = "cheetah.server:main"
+cheetah = "cheetah.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cheetah"]
+
+# Docling pulls in PyTorch. On Linux the default wheel bundles CUDA (several GB); use the CPU build.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[dependency-groups]
+dev = ["pytest>=8"]

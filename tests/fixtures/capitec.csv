@@ -1,0 +1,5 @@
+Account,Capitec Savings
+Transaction Date,Posting Date,Description,Debit Amount,Credit Amount,Balance
+2025/03/01,2025/03/01,Salary Acme,,15000.00,15500.00
+2025/03/02,2025/03/02,Pick n Pay Linden,-845.50,,14654.50
+2025/03/05,2025/03/05,Discovery Health,-2900.00,,11754.50

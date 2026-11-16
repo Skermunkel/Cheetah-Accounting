@@ -1,0 +1,10 @@
+                     First National Bank                     Gold Business Account
+   Account Number : 62000001234                     Statement Period : 01 December 2023 to 31 January 2024
+   Opening Balance                         1,000.00 Cr
+   Date     Description                                     Amount          Balance    Accrued Bank Charges
+   05 Dec   Inward Swift Valve Corp                      2,500.00 Cr     3,500.00 Cr
+   12 Dec   POS Purchase Checkers Hyper 400000*1234 10 Dec     450.25        3,049.75 Cr        2.50
+   31 Dec   #Monthly Account Fee                                99.00        2,950.75 Cr
+   03 Jan   FNB App Payment To Rent Office                   1,200.00        1,750.75 Cr
+   15 Jan   Engen Fourways                                     750.75        1,000.00 Cr
+   Closing Balance                         1,000.00 Cr

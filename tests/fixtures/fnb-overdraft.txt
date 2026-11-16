@@ -1,0 +1,10 @@
+   Gold Business Account : 62000009999
+                                                      Statement Period : 28 February 2025 to 31 March 2025
+   Opening Balance       5,109.48Dr Service Fees      139.91Dr
+   Closing Balance       3,995.13Dr
+  Date                       Description                    Amount   Balance Bank Charges
+  01 Mar Rtc Credit Owner                  Ref0000001         1,500.00Cr 3,609.48
+  03 Mar POS Purchase 109.99 Google Youtu  400000*0000 28 Feb 109.99  3,719.47
+  04 Mar                                                       5.52   3,724.99
+  15 Mar                                   400000*0000 13 Mar 428.17  4,153.16 3.68
+  20 Mar Inward Swift Microsoft                                158.03Cr 3,995.13

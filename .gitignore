@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+dist/
+build/
+.pytest_cache/
+# Personal data never lives in the repo; the workspace is a separate folder (see README).
+workspace/
+*.zip

@@ -1,0 +1,9 @@
+{"rules": [
+ {"match": "^#|service fee|monthly (account )?fee|admin(istration)? fee|cash (deposit|handling) fee|transaction fee|bank charge|^fee", "treatment": "expense", "account": "Bank charges", "share": 1.0, "vat": "none", "note": "starter rule: bank fees (the VAT on fees is shown as one total on the statement)"},
+ {"match": "interest (on debit|charged)|debit interest|dr\\.?int|penalty interest", "treatment": "expense", "account": "Interest paid", "share": 1.0, "vat": "exempt", "note": "starter rule"},
+ {"match": "credit interest|interest (received|earned)|^int(erest)? cr", "treatment": "income", "account": "Interest received", "share": 1.0, "vat": "exempt", "note": "starter rule"},
+ {"match": "\\bsars\\b|sars[- ]?(efiling|vat|paye|ita|provisional)", "treatment": "tax", "account": "SARS", "share": 1.0, "vat": "none", "note": "starter rule: payments to SARS are not expenses"},
+ {"match": "transfer (to|from) (savings|own|credit card|my )|own account|inter-?account|card pay ?off|internal transfer", "treatment": "transfer", "account": "Transfer", "share": 1.0, "vat": "none", "note": "starter rule: moving money between the entity's own accounts"},
+ {"match": "checkers|pick ?n ?pay|\\bpnp\\b|spar\\b|woolworths|shoprite|food lover|\\btops\\b|uber ?eats|mr ?d food|takealot|netflix|showmax|dstv|spotify|liquor", "treatment": "personal", "account": "Private", "share": 1.0, "vat": "none", "note": "starter rule: usually private; change it if the person shows it was a business cost"},
+ {"match": "cipc", "treatment": "expense", "account": "Licences and fees", "share": 1.0, "vat": "none", "note": "starter rule: CIPC fees, no VAT"}
+]}

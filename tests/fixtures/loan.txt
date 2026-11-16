@@ -1,0 +1,7 @@
+Transaction Description                    Debits      Credits       Balance
+12 Mar 2023 Opening Balance                                       20 000.00Dr
+31 Mar 2023 Rate Change                                           20 000.00Dr
+07 Apr 2023 Interest                       265.61                 20 265.61Dr
+08 Apr 2023                                 69.00                 20 334.61Dr
+08 Apr 2023 Debit Order                                537.61     19 797.00Dr
+15 Apr 2023 Closing Balance                                       19 797.00Dr
